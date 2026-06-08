@@ -1,6 +1,6 @@
 <screen>
 	<view extends="lv_obj" scrollable="false">
-		<lv_label text="-53 dB" align="center" style_text_font="Souvenir" style_text_color="0x000000" />
 		<lv_arc align="center" height="480" width="480" />
+		<lv_label text="test" align="center" style_text_font="Souvenir_Big" />
 	</view>
 </screen>

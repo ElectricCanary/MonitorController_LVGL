@@ -43,9 +43,10 @@
  * Fonts
  *----------------*/
 
-lv_font_t * Souvenir;
+lv_font_t * Souvenir_Big;
 extern uint8_t Souvenir_Bold_ttf_data[];
 extern size_t Souvenir_Bold_ttf_data_size;
+lv_font_t * Souvenir_Med;
 
 /*----------------
  * Images
@@ -76,8 +77,10 @@ void ui_init_gen(const char * asset_path)
      * Fonts
      *----------------*/
 
-    /* create tiny ttf font 'Souvenir' from C array */
-    Souvenir = lv_tiny_ttf_create_data(Souvenir_Bold_ttf_data, Souvenir_Bold_ttf_data_size, 100);
+    /* create tiny ttf font 'Souvenir_Big' from C array */
+    Souvenir_Big = lv_tiny_ttf_create_data(Souvenir_Bold_ttf_data, Souvenir_Bold_ttf_data_size, 100);
+    /* create tiny ttf font 'Souvenir_Med' from C array */
+    Souvenir_Med = lv_tiny_ttf_create_data(Souvenir_Bold_ttf_data, Souvenir_Bold_ttf_data_size, 30);
 
 
     /*----------------
@@ -98,7 +101,8 @@ void ui_init_gen(const char * asset_path)
     /* Register widgets */
 
     /* Register fonts */
-    lv_xml_register_font(NULL, "Souvenir", Souvenir);
+    lv_xml_register_font(NULL, "Souvenir_Big", Souvenir_Big);
+    lv_xml_register_font(NULL, "Souvenir_Med", Souvenir_Med);
 
     /* Register subjects */
 

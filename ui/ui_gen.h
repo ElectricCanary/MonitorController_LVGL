@@ -55,7 +55,9 @@ extern "C" {
  * Fonts
  *----------------*/
 
-extern lv_font_t * Souvenir;
+extern lv_font_t * Souvenir_Big;
+
+extern lv_font_t * Souvenir_Med;
 
 /*----------------
  * Images

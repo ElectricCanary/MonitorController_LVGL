@@ -21,6 +21,7 @@
 
 	<fonts>
 		<!-- Add <bin> , <tiny_ttf>, <freetype> tags here -->
-		<tiny_ttf src_path="fonts/Souvenir_Bold.ttf" name="Souvenir" size="100" />
+		<tiny_ttf src_path="fonts/Souvenir Bold.ttf" name="Souvenir_Big" size="100" />
+		<tiny_ttf src_path="fonts/Souvenir Bold.ttf" name="Souvenir_Med" size="30" />
 	</fonts>
 </globals>
